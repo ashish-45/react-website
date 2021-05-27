@@ -1,0 +1,54 @@
+import React from 'react';
+import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+
+const Navbar = () => {
+    return (
+        <div>
+            <div >
+                <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                    <NavLink className="navbar-brand" to="/home" ><img src="https://www.abc27.com/wp-content/uploads/sites/55/2020/04/doodle.png?w=640" alt="coco-cola" className="coco" /></NavLink>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                        <i class="far fa-bars"></i>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item active">
+                                <NavLink className="nav-link ml-3" to="/home" style={{ color: 'white' }}>HOME <span className="sr-only">(current)</span></NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link ml-3" activeClassName='menu-active' to="/services" style={{ color: 'white' }}>SERVICES</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link ml-3" activeClassName='menu-active' to="/about" style={{ color: 'white' }}>ABOUT</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link ml-3" activeClassName='menu-active' to="/contact" style={{ color: 'white' }}>CONTACT</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar;
+
+
+ // else if (regex.test(email)) {
+        // }
+        // else {
+        // }
+        // emailjs.sendForm('service_ts4o9mt', 'template_s1tfq4x', e.target,
+        //     'user_DmOjpZwDwFdOihvf2nSrU')
+        //     .then((result) => {
+        //         console.log(result.text);
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
+        // e.target.reset();
+        // alert("form submitted Successfully");
+        // setName("");
+        // setEmail("");
+        // setMessage("");

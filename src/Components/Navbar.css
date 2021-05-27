@@ -1,0 +1,35 @@
+.navbar{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav .nav-item{
+    padding: 0 10px;
+    cursor: pointer;
+    /* float: left;  make all text left
+    text-align: left; */
+}
+
+.navbar-nav .nav-link{
+    font-weight: 600;
+}
+
+.navbar-toggler-icon{
+    font-weight: 800;
+    color: white;
+    background-color: white;
+}
+
+.far{
+    font-size: 30px !important;
+    color: white;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
